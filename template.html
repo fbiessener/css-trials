@@ -3,19 +3,73 @@
 
   <head>
     <style>
-        /*h1 {
+        /*Trial 1:
+        h1 {
             font-family: Helvetica, sans-serif;
-        }*/
+        }
 
+        Trial 2:
         body {
           margin: 0;
         }
 
         .red {
           background-color: #ff0000;
-          margin: 0;
+          Body margin defaults to 8px, can either change body margin or use a 
+          negative margin on the block element
+          margin: -8px;
           height: 240px;
           width: 350px;
+        }
+
+        Trial 3:
+        div {
+          margin: -8px;
+          width: 500px;
+          height: 100px;
+        }
+
+        .black {
+          background-color: black;
+        }
+
+        .red {
+          background-color: red;
+        }
+
+        .gold {
+          background-color: #ffd700;
+        }
+
+        Trial 4:
+        .box {
+          background-color: black;
+          margin: 25px;
+          width: 100px;
+          height: 100px;
+          display: inline-block;
+        }*/
+
+        .rectangle {
+          margin: -8px;
+          width: 350px;
+          height: 200px;
+        }
+
+        #red {
+          background-color: red;
+        }
+
+        #blue {
+          background-color: blue;
+        }
+
+        .box {
+          background-color: black;
+          margin: 40px 40px 40px 30px;
+          width: 100px;
+          height: 100px;
+          display: inline-block;
         }
 
 
@@ -23,8 +77,30 @@
   </head>
 
   <body>
-    <!-- <h1>Hello world.</h1> -->
+    <!-- Trial 1:
+    <h1>Hello world.</h1>
+    
+    Trial 2:
+    <div class="red"></div> 
+
+    Trial 3:
+    <div class="black"></div>
     <div class="red"></div>
+    <div class="gold"></div>
+
+    Trial 4:
+    <div class="box"></div>
+    <div class="box"></div>-->
+
+    <div class="rectangle" id="red">
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <div class="rectangle" id="blue">   
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
   </body>
 
 </html>
